@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { Input } from '../../elements';
+import './Home.scss';
 
-export const Home = () => {
+const Home = () => {
   return (
-    <div>
-
+    <div className='home'>
+      <Input description='Title' type='text'></Input>
+      <Input description='description' type='text'></Input>
+      <Input description='product_text' type='text'></Input>
+      <Input description='price' type='text'></Input>
+      <Input description='' type='text'></Input>
+      <Input description='' type='text'></Input>
+      <Input description='' type='text'></Input>
     </div>
   )
 }
+
+export default Home;
