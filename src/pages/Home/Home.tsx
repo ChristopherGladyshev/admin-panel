@@ -1,6 +1,7 @@
 import React from 'react';
 import { Input } from '../../elements';
 import './Home.scss';
+import { AuthenticationForm } from '../../components';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Input description='' type='text'></Input>
       <Input description='' type='text'></Input>
       <Input description='' type='text'></Input>
+      <AuthenticationForm></AuthenticationForm>
     </div>
   )
 }
