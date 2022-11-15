@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { StringDecoder } from 'string_decoder'
 
 type InitialState = {
   email: string | null,
@@ -16,8 +17,8 @@ export const authenticationSlice = createSlice({
   name: 'registration',
   initialState,
   reducers: {
-    registration: (state, action: PayloadAction<string>) => {
-      state.email = action.payload
+    registration: (state, action: PayloadAction<{email: string, password: string}>) => {
+      state.email = action.payload.email
     },
     error: (state) => {
 
